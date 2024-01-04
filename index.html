@@ -72,21 +72,11 @@ console.log ('////////////////////////')
         (p <= d )
 console.log ('////////////////////////')
         // Kabisat tahun
-        function isLeapYear(year) {
-            if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
-            return true; // Tahun kabisat
-        } else {
-            return false; // Bukan tahun kabisat
+        for(let i=1600; i<=2024;i++){
+            if ((i %400==0) || (i %400 !=0 && i %4 ==0)) {
+                console.log(`${i} tahun kabisat`)
+            }else console.log(`${i} bukan tahun kabisat`)
         }
-        }
-
-        // Contoh penggunaan
-        var tahun = 2024;
-            if (isLeapYear(tahun)) {
-        console.log(tahun + " adalah tahun kabisat.");
-        } else {
-        console.log(tahun + " bukan tahun kabisat.");
-        }   
     </script>
 </body>
 </html>
