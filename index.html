@@ -38,7 +38,7 @@ console.log ('///////////////////////////////')
             n++
         } while ( n <= 10)
 console.log ('////////////////////////')
-         // // for faktorial
+        // for faktorial
         const a= 5;
 
         let faktorial= 1;
@@ -68,9 +68,25 @@ console.log ('////////////////////////')
             p++
         }
 
-    while (
-        p <= d  
-    )
+        while 
+        (p <= d )
+console.log ('////////////////////////')
+        // Kabisat tahun
+        function isLeapYear(year) {
+            if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+            return true; // Tahun kabisat
+        } else {
+            return false; // Bukan tahun kabisat
+        }
+        }
+
+        // Contoh penggunaan
+        var tahun = 2024;
+            if (isLeapYear(tahun)) {
+        console.log(tahun + " adalah tahun kabisat.");
+        } else {
+        console.log(tahun + " bukan tahun kabisat.");
+        }   
     </script>
 </body>
 </html>
